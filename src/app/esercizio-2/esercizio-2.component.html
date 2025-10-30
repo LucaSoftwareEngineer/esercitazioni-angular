@@ -1,0 +1,24 @@
+<p>esercizio-2 works!</p>
+
+@if(attivo) { è attivo } @else { non è attivo }
+
+<table>
+  <thead>
+    <tr>
+      <td>Targa</td>
+      <td>Colore</td>
+      <td>Marca</td>
+      <td>Numero Posti</td>
+      <td>Numero Ruote</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let veicolo of veicoli">
+      <td>{{ veicolo.targa }}</td>
+      <td>{{ veicolo.colore }}</td>
+      <td>{{ veicolo.marca }}</td>
+      <td>{{ veicolo.numeroPosti }}</td>
+      <td>{{ veicolo.numeroRuote }}</td>
+    </tr>
+  </tbody>
+</table>
